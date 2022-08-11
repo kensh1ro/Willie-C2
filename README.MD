@@ -31,7 +31,7 @@ The program uses Mutex lock to prevent it from running more than once simultaneo
 
 ## Demo
 
-![Demo](https://i.ibb.co/TLmg7NR/demo.gif)
+![Demo](https://user-images.githubusercontent.com/46089361/184121473-c7aa3378-1f38-4cec-ad26-d6aff31bdb2b.gif)
 
 
 ## TODO

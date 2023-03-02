@@ -25,7 +25,7 @@
 - Create a new discord server, creating a channel is optional, you can use channel "general", copy its ID and save it in "setup_config.py" CHANNEL variable
 - Visit discord developer dashboard
 - Create new application
-- Add a bot for the application (make sure you untick "PUBLIC BOT")
+- Add a bot for the application (make sure you untick "PUBLIC BOT", and enable "MESSAGE CONTENT INTENT")
 - Save the bot's token in "setup_config.py" TOKEN variable
 - Go to OAuth2 -> URL Generator, tick the bot options in "SCOPES", then give it the appropriate permissions in the "BOT PERMISSIONS" section (Administrator permission is the quickest way), lastly visit the generated link and choose the server you want the bot to be added to.
 - Run "setup_config.py".

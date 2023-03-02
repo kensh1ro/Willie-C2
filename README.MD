@@ -21,10 +21,15 @@
   
 ## Installation
 
-- Create a discord Bot, and invite it to your Discord server.
-- Change "TOKEN" and "CHANNEL_ID" variables in "setup_config.py" to your Bot's settings accordingly.
-- run "setup_config.py".
-- Compile "willie.go" by running `go build -ldflags="-s -w -H windowsgui" -trimpath`.
+- Turn on Developer mode in Settings -> Advanced
+- Create a new discord server, creating a channel is optional, you can use channel "general", copy its ID and save it in "setup_config.py" CHANNEL variable
+- Visit discord developer dashboard
+- Create new application
+- Add a bot for the application (make sure you untick "PUBLIC BOT", and enable "MESSAGE CONTENT INTENT")
+- Save the bot's token in "setup_config.py" TOKEN variable
+- Go to OAuth2 -> URL Generator, tick the bot options in "SCOPES", then give it the appropriate permissions in the "BOT PERMISSIONS" section (Administrator permission is the quickest way), lastly visit the generated link and choose the server you want the bot to be added to.
+- Run "setup_config.py".
+- Compile "willie.go" by running `GOOS=windows GOARCH=amd64 go build -ldflags="-s -w -H windowsgui" -trimpath`.
 
 Everytime you run "setup_config.py" a new "config.go" file gets created with a randomized RC4 key responsible for decrypting strings to avoid triggering AV/EDR during static checks.
 The program uses Mutex lock to prevent it from running more than once simultaneously.

@@ -57,10 +57,10 @@ retry:
 
 	body, err := ioutil.ReadAll(resp.Body)
 	//if method == "POST" {
-	fmt.Println("*****************************")
-	fmt.Printf("----%s----", method)
-	fmt.Println(string(body))
-	fmt.Println("*****************************")
+	//fmt.Println("*****************************")
+	//fmt.Printf("----%s----", method)
+	//fmt.Println(string(body))
+	//fmt.Println("*****************************")
 	//}
 	if err != nil {
 		fmt.Println(err.Error())

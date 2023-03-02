@@ -50,6 +50,7 @@ func main() {
 	for {
 		if len(pq.Q) > 0 {
 			content := pq.Q.Pop()
+			//fmt.Print("CONTENT: ")
 			//fmt.Println(content)
 			var command = strings.SplitN(content.(string), " ", 2)
 			switch command[0] {
